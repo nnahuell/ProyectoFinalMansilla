@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Ecommerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Tienda JS</h1>
+    <button id="verCarritoBtn">🛒 Ver Carrito (<span id="contador">0</span>)</button>
+  </header>
+
+  <main>
+    <section id="productosContainer" class="grid"></section>
+  </main>
+
+  <div id="carritoModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Tu Carrito</h2>
+      <ul id="carritoLista"></ul>
+      <p id="total"></p>
+      <button id="vaciarBtn">Vaciar Carrito</button>
+      <button id="comprarBtn">Finalizar Compra</button>
+      <button id="cerrarBtn">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
